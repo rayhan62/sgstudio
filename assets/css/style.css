@@ -23,7 +23,7 @@ CSS INDEX
 
 html {
   font-size: 100%;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
  }
  #map { position: absolute; top: 0; bottom: 0; width: 100%; }
  .contact-map{
@@ -148,6 +148,12 @@ section {
         width: 220px !important;
       }
 
+
+    }
+    @media (max-width: 468px){
+      .pricing_v1 .section_title h2:after {
+        width: 300px !important;
+    }
     }
     .deneb_about  .section_title h2:after{
       width: 165px;
@@ -475,8 +481,6 @@ input.form_control {
 .deneb_banner {
   position: relative;
   padding-bottom: 10px;
-  width: 100%;
-  height: 80vh !important;
  }
  .mainlslider{
    padding: 0px;
@@ -484,7 +488,7 @@ input.form_control {
  }
  .shape-buttom {
   position: absolute;
-  bottom: -60px !important;
+  bottom: -50px;
   top: auto;
   left: 0;
   right: 0;
@@ -503,14 +507,14 @@ input.form_control {
 
  @media screen and (max-width:768px){
   .shape-buttom{
-    bottom:141px !important;
+    bottom:0px;
   }
   .banner-pd {
-    padding: 150px;
-  }
+    padding: 141px 144px;
+}
   
  }
- @media screen and (max-width:400px){
+ @media screen and (max-width:468px){
   .banner-pd {
     padding: 70px 20px !important;
   }
@@ -530,14 +534,9 @@ input.form_control {
      font-size: 40px !important;
      margin-left: 40px !important;
    }
-   .shape-buttom{
-    bottom:-25px !important;
-  }
- }
- @media screen and (max-width:1200px){
-  .shape-buttom{
-    bottom: 0px;
-  }
+   .shape-buttom {
+    bottom: 21px;
+}
  }
 .signle_slider-1{
   background-image:linear-gradient(90deg, rgba(0,0,0,0.6587009803921569) 0%, rgba(0,0,0,0.7455357142857143) 100%), url(../images/hero-bg-01.png);
@@ -564,11 +563,16 @@ input.form_control {
 .banner_content > a {
   font-size: 18px;
   border-radius: 19px 2px 19px 2px;
-  background: #feb000;
   padding:8px 40px;
   text-decoration: none;
   color: #e4e4e4;
   margin-top: 10px;
+  border: solid #feb000 3px ;
+  transition: all 0.2s;
+}
+.banner_content > a:hover{
+  background:#feb000 ;
+  color: rgb(24, 24, 24);
 }
 .banner_content > h5 a{
   color: #e4e4e4;
@@ -675,6 +679,7 @@ input.form_control {
     margin: -15px 20px;
 }
 .play-btn i {
+  background: rgb(44, 125, 255);
   border-radius: 50%;
     color: #ffffff;
     font-size: 60px;
@@ -1191,12 +1196,13 @@ input.form_control {
 }
 
 .project_v2 .grid_item {
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+ }
 /*-----------------------------------------------------------------------
 ---------------------------------------- pricing section  ------------------
 ----------------------------------------------------------*/
 .deneb_pricing .pircing_box {
-  margin: 0px 20px;
+  margin: 10px 20px;
   overflow: hidden;
   text-align: center;
   border-radius: 10px;
@@ -1220,37 +1226,34 @@ input.form_control {
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .deneb_pricing .pircing_box {
       margin-bottom: 60px; }
-}
-  @media screen and (max-width: 768px) {
-    .deneb_pricing .pircing_box {
-      margin-bottom: 60px; }
-      img.price-camera{
-        width: 342px !important;
-        height: auto;
-    }
-    img.price-video{
-      width: 342px !important;
-      height: auto;
-  }
-  img.price-voice {
-    width: 342px !important;
-    height: auto;
-}
-    
-    }
-    @media screen and (max-width: 368px) {
       .deneb_pricing .pircing_box {
         margin-bottom: 60px; }
         img.price-camera{
-          width: 290px !important;
+          width: 342px !important;
           height: auto;
       }
       img.price-video{
-        width:290px !important;
+        width: 342px !important;
         height: auto;
     }
     img.price-voice {
-      width: 290px !important;
+      width: 342px !important;
+      height: auto;
+  }
+}
+    @media screen and (max-width: 468px) {
+      .deneb_pricing .pircing_box {
+        margin-bottom: 60px; }
+        img.price-camera{
+          width: 345px !important;
+          height: auto;
+      }
+      img.price-video{
+        width:345px !important;
+        height: auto;
+    }
+    img.price-voice {
+      width: 345px !important;
       height: auto;
   }  
     }
@@ -1415,19 +1418,8 @@ input.form_control {
   padding-bottom: 60px; 
   background: rgb(35, 20, 47);
 }
-  .blog_v1:after {
-    position: absolute;
-    content: '';
-    right: 0;
-    top: 0px;
-    background: url(../images/shape/shape_14.png) no-repeat;
-    background-position: top right;
-    width: 100%;
-    height: 100%;
-    z-index: -1; }
   .blog_v1 .grid_item {
     margin-top: 25px;
-    background: #fff;
     border-radius: 10px;
     overflow: hidden;
     -webkit-transition: all 0.5s ease-out 0s;
@@ -1459,7 +1451,7 @@ input.form_control {
       .blog_v1 .grid_item .deneb_info p {
         margin-bottom: 6px; }
       .blog_v1 .grid_item .deneb_info .link_btn {
-        color: #011a3e;
+        color: #e4e4e4;
         font-weight: 500;
         text-transform: uppercase; }
 
@@ -1662,7 +1654,16 @@ img.contact-img{
 .deneb_contact {
   position: relative;
   background: #1C1337;
+  z-index: 1;
  }
+ .deneb_contact{
+  background-image: url(../images/contact-form-svg.svg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
  @media screen and (max-width: 368px){
   img.contact-img {
     width: 320px;
@@ -1710,7 +1711,6 @@ img.contact-img{
 .contact_v1 {
   padding: 100px 0px;
   z-index: 1; }
-
 .contact_v1 .section_title h2 {
   position: relative; }
   .contact_v1 .section_title h2:after {
@@ -2028,7 +2028,7 @@ img.contact-img{
       text-align: center;
       border-radius: 50%;
       background-color: #f9e6d4;
-      color: #fba543;
+      color: #4399fb;
       font-size: 14px;
       -webkit-transition: all all 0.5s ease-out 0s;
       -moz-transition: all all 0.5s ease-out 0s;
