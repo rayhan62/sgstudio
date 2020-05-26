@@ -25,99 +25,115 @@
 	    <!--animate css-->
 	    <link rel="stylesheet" href="assets/css/animate.css">
 	    <!--style css-->
-	    <link rel="stylesheet" href="assets/css/style.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		<script>
+			Weglot.initialize({
+				api_key: 'wg_642df8d8873a03b7f6555de636fb02745'
+			});
+		</script>
 	</head>
 	<body>
 		<!-- Preloader -->
-		<!-- <div class="preloader">
+		<div class="preloader">
 			<div class="lds-ripple">
 				<div></div>
 				<div></div>
 			</div>
-		</div> -->
-		<!-- Start header_area -->
-		<header class="header_area header_v1 transparent_header">
-			<div class="container">
-				<div class="site_menu">
-					<div class="row align-items-center">
-						<div class="col-lg-2">
-							<div class="brand">
-								<a href="#" class="logo"><img src="assets/images/logo_1.png" class="img-fluid" alt=""></a>
+		</div>
+			<!-- Start header_area -->
+			<header class="header_area header_v1 transparent_header">
+				<div class="container">
+					<div class="site_menu">
+						<div class="row align-items-center">
+							<div class="col-lg-2">
+								<div class="brand">
+									<a href="#" class="logo"><img src="assets/images/logo.svg" width="400" class="img-fluid" alt=""></a>
+								</div>
 							</div>
-						</div>
-						<div class="col-lg-10">
-							<div class="primary_menu">
-								<nav class="main_menu">
-									<ul>
-										<li class="menu-item active_link"><a href="index-2.html">Home</a></li>
-										<li class="menu-item"><a href="#">Studio</a>
-											<ul class="sub-menu">
-												<li class="menu-item"><a href="blog.html">Photography</a></li>
-												<li class="menu-item"><a href="blog-details.html">Videography</a></li>
-											</ul>
-										</li>
-										<li class="menu-item"><a href="service.html">Services</a></li>
-										<li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
-										<li class="menu-item"><a href="#">Blog</a>
-											<ul class="sub-menu">
-												<li class="menu-item"><a href="blog.html">Blog</a></li>
-												<li class="menu-item"><a href="blog-details.html">Blog Details</a></li>
-											</ul>
-										</li>
-										<li class="menu-item"><a href="about.html">About Us</a></li>
-										<li class="menu-item"><a href="contact.html">Contact Us</a></li>
-										<li class="menu-item"><a href="#">English</a>
-											<ul class="sub-menu">
-												<li class="menu-item"><a href="blog.html">Arabic</a></li>
-											</ul>
-										</li>
-									</ul>
-								</nav>
+							<div class="col-lg-10">
+								<div class="primary_menu" id="menu">
+									<nav class="main_menu">
+										<ul class="navbar">
+											<li class="menu-item active_link"><a href="index.html">Home</a></li>
+											<li class="menu-item scroll"><a href="#studio">Studio</a>
+												<ul class="sub-menu">
+													<li class="menu-item"><a href="photography.html">Photography</a></li>
+													<li class="menu-item"><a href="videography.html">Videography</a></li>
+												</ul>
+											</li>
+											<li class="menu-item scroll"><a href="#service">Services</a></li>
+											<li class="menu-item scroll"><a href="#price">Price</a></li>
+											<li class="menu-item scroll"><a href="#blog">Blog</a>
+												<ul class="sub-menu">
+													<li class="menu-item"><a href="#">Blog</a></li>
+													<li class="menu-item"><a href="#">Blog Details</a></li>
+												</ul>
+											</li>
+											<li class="menu-item"><a href="about.html">About</a></li>
+											<li class="menu-item scroll"><a href="#contact">Contact</a></li>
+											<li class="menu-item" data-wg-notranslate class="country-selector weglot-inline weglot-default weglot-invert"><a href="#">EN</a>
+												<ul class="sub-menu">
+													<li class="menu-item fr"><a href="#Weglot-en" data-code-language="en">English</a></li>
+													<li class="menu-item fr"><a href="#Weglot-ar" data-code-language="ar">Arabic</a></li>
+												</ul>
+											</li>
+										</ul>
+									</nav>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class="mobile_wrapper">
-					<div class="mobile_header">
-						<div class="row align-items-center">
-							<div class="col-6">
-								<div class="brand_logo">
-									<a href="#"><img src="assets/images/logo_1.png" class="img-fluid" alt=""></a>
+					<div class="mobile_wrapper">
+						<div class="mobile_header">
+							<div class="row align-items-center">
+								<div class="col-6">
+									<div class="brand_logo">
+										<a href="#" class="logo"><img src="assets/images/logo.svg" width="400" class="img-fluid" alt=""></a>
+									</div>
 								</div>
-							</div>
-							<div class="col-6">
-								<div class="menu_button">
-									<div class="menu_icon">
-										<span></span>
-										<span></span>
-										<span></span>
+								<div class="col-6">
+									<div class="menu_button">
+										<div class="menu_icon">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="sidenav_menu">
-						<div class="close_icon">
-							<a href="#" class="close_btn"><i class="fas fa-times"></i></a>
+						<div class="sidenav_menu">
+							<div class="close_icon">
+								<a href="#" class="close_btn"><i class="fas fa-times"></i></a>
+							</div>
+							<ul class="sidebar-menu">
+								<li class="menu-item"><a href="index.html">Home</a></li>
+								<li class="menu-item"><a href="#studio">Studio</a>
+									<ul class="sub-menu">
+										<li><a href="photography.html">Photography</a></li>
+										<li><a href="videography.html">Videography</a></li>
+									</ul>
+								</li>
+								<li class="menu-item"><a href="#service">Services</a></li>
+								<li class="menu-item"><a href="#price">Price</a></li>
+								<li class="menu-item"><a href="#blog">Blog</a>
+									<ul class="sub-menu">
+										<li><a href="#">Blog</a></li>
+										<li><a href="#">Blog Details</a></li>
+									</ul>
+								</li>
+								<li class="menu-item"><a href="about.html">About</a></li>
+								<li class="menu-item"><a href="#contact">Contact</a></li>
+								<li class="menu-item"><a href="#">En</a>
+									<ul class="sub-menu">
+										<li><a href="#">Arabic</a></li>
+									</ul>
+								</li>
+							</ul>
 						</div>
-						<ul class="sidebar-menu">
-							<li class="menu-item"><a href="index-2.html">Home</a></li>
-							<li class="menu-item"><a href="about.html">About Us</a></li>
-							<li class="menu-item"><a href="service.html">Services</a></li>
-							<li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
-							<li class="menu-item"><a href="blog.html">Blog</a>
-								<ul class="sub-menu">
-									<li><a href="blog.html">Blog</a></li>
-									<li><a href="blog-details.html">Blog Details</a></li>
-								</ul>
-							</li>
-							<li class="menu-item"><a href="contact.html">Contact Us</a></li>
-							<li class="menu-item"><a href="contact.html" class="deneb_btn">Hire Us</a></li>
-						</ul>
 					</div>
 				</div>
-			</div>
-		</header><!-- End header_area -->
+			</header><!-- End header_area -->
 		<!-- Start deneb_breadcrumb section -->
 		<section class="deneb_breadcrumb bg_image" style="background-image: url(assets/images/breadcrumb_bg.jpg);">
 			<div class="container">

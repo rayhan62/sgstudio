@@ -101,9 +101,6 @@ body {
   overflow-x: hidden; 
   background: #1C1026 !important;
 }
-section {
-  scroll-snap-align: center;
-}
 .bg_image {
   position: relative;
   background-size: cover;
@@ -118,7 +115,7 @@ section {
   margin: auto;
   margin-bottom: 45px; }
   .section_title h2 {
-    margin-bottom: 14px;
+    margin-bottom: 50px;
     position: relative; }
     @media (max-width: 767px) {
       .section_title h2 {
@@ -152,7 +149,7 @@ section {
     }
     @media (max-width: 468px){
       .pricing_v1 .section_title h2:after {
-        width: 300px !important;
+        width: 210px !important;
     }
     }
     .deneb_about  .section_title h2:after{
@@ -401,7 +398,7 @@ input.form_control {
         width: 30px; }
   .header_area .sidenav_menu {
     overflow: hidden;
-    width: 40%;
+    width: 60%;
     height: 100%;
     position: fixed;
     top: 0;
@@ -431,8 +428,10 @@ input.form_control {
         height: 40px;
         line-height: 40px;
         text-align: center;
-        background-color: #fff;
-        color: #feb000; }
+        background-color:#6C63FF;
+        color: #fff; 
+        border-radius: 10px;
+      }
     .header_area .sidenav_menu .sidebar-menu li {
       display: block;
       line-height: 40px; }
@@ -486,12 +485,10 @@ input.form_control {
    padding: 0px;
    margin:auto;
  }
- .shape-buttom {
-  position: absolute;
-  bottom: -50px;
-  top: auto;
-  left: 0;
-  right: 0;
+ .shape-buttom, svg{
+   display: block;
+   margin-top: -30px;
+
  }
  .banner-pd {
   padding: 180px;
@@ -506,9 +503,6 @@ input.form_control {
 }
 
  @media screen and (max-width:768px){
-  .shape-buttom{
-    bottom:0px;
-  }
   .banner-pd {
     padding: 141px 144px;
 }
@@ -534,9 +528,6 @@ input.form_control {
      font-size: 40px !important;
      margin-left: 40px !important;
    }
-   .shape-buttom {
-    bottom: 21px;
-}
  }
 .signle_slider-1{
   background-image:linear-gradient(90deg, rgba(0,0,0,0.6587009803921569) 0%, rgba(0,0,0,0.7455357142857143) 100%), url(../images/hero-bg-01.png);
@@ -550,7 +541,7 @@ input.form_control {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 80vh;
 }
 .signle_slider-3{
   background-image:linear-gradient(90deg, rgba(0,0,0,0.6587009803921569) 0%, rgba(0,0,0,0.7455357142857143) 100%), url(../images/photography-banner.jpg);
@@ -558,7 +549,7 @@ input.form_control {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  height: 80vh;
 }
 .banner_content > a {
   font-size: 18px;
@@ -799,7 +790,7 @@ input.form_control {
     --webkit-box-shadow:  8px 8px 24px #0b060f, 
                  -8px -8px 24px #2d1a3d;
     max-width: 370px;
-    margin:20px auto;
+    margin:40px auto;
     padding: 50px 45px 30px;
     text-align: center;
     border-radius: 8px;
@@ -832,8 +823,7 @@ input.form_control {
       text-transform: uppercase; }
 
 .service_v1 {
-  padding-bottom: 40px;
-  padding-top: 60px;
+  padding: 90px 0px 50px 0px;
  }
 
 .service_wrapper .service_tab_wrap .service_tab_nav {
@@ -1050,7 +1040,7 @@ input.form_control {
 ---------------------------------------- Last best Work section  ------------------
 ----------------------------------------------------------*/
 .project_v1 .project_button {
-  margin-bottom: 45px; }
+  margin-bottom: 60px; }
   .project_v1 .project_button .project_btn {
     background: linear-gradient(145deg, #190e22, #1e1129);
     background: -webkit-linear-gradient(145deg, #190e22, #1e1129);
@@ -1106,7 +1096,7 @@ input.form_control {
   overflow: hidden;
   background: #fff;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin: 20px 30px;
   -webkit-transition: all 0.5s ease-out 0s;
   -moz-transition: all 0.5s ease-out 0s;
   -ms-transition: all 0.5s ease-out 0s;
@@ -1191,8 +1181,8 @@ input.form_control {
 .project_v1 {
   overflow: hidden;
   position: relative;
-  padding-bottom: 30px; 
-  padding-top: 40px;
+  padding-bottom: 120px; 
+  padding-top: 120px;
 }
 
 .project_v2 .grid_item {
@@ -1291,7 +1281,7 @@ input.form_control {
 .pricing_v1 {
   position: relative;
   padding-bottom: 100px; 
-  padding-top: 60px;
+  padding-top: 120px;
   z-index: 10;
 }
 /*=---------------------------------
@@ -1299,7 +1289,7 @@ input.form_control {
  ------------------------------------- */
 .deneb_testimonial {
   overflow: hidden;
-  padding-bottom: 40px; }
+  padding-bottom: 120px; }
   .deneb_testimonial .row1 {
     max-width: 700px;
     display: flex;
@@ -1414,8 +1404,7 @@ input.form_control {
  ------------------------------------- */
 .blog_v1 {
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 60px; 
+padding: 120px 0px; 
   background: rgb(35, 20, 47);
 }
   .blog_v1 .grid_item {
@@ -2027,7 +2016,7 @@ img.contact-img{
       line-height: 30px;
       text-align: center;
       border-radius: 50%;
-      background-color: #f9e6d4;
+      background-color: #fff;
       color: #4399fb;
       font-size: 14px;
       -webkit-transition: all all 0.5s ease-out 0s;
